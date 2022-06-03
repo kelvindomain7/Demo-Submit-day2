@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html  lang="en">
+
+<head>
+
+    <title>Introduction to JavaScript Essentials</title>
+
+    <style>
+      /*Cascade Stylesheet CSS*/
+   /*    .one{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            
+            }
+            */
+            body{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+            }
+            .image{
+                width: 400px;
+            }
+
+    </style>
+
+</head>
+
+<!--<h3>Blockchain Technology</h3>
+  
+
+    <h1 class="head">Heading 1 Text</h1>
+    <button onclick="changeHead()">Change Text</button>
+    <p class="para">Paragraph Change Text</p>
+    <button onclick="changeText()">Change Text</button><br />
+    <img class="img" src="img1.jpeg" width="200"/><br />
+    <button onclick="changeImage()">Change Image</button>
+   
+    
+<div class="one">
+
+  </div> 
+ <button onclick="changeColor()">Change Color</button>
+    
+-->
+ <body>
+  <button onclick="previous()"> Previous</button>
+  <img class="image" src="img1.jpeg" />
+  <button onclick="next()" > Next</button>
+
+    <script>
+
+      let images=["img1.jpeg", "img2.jpeg", "img3.jpeg"];
+      let currentImage=0;
+
+      function next(){
+                    
+
+                  if(currentImage<2)
+                  
+                  {
+                    currentImage++;
+                  }
+                  document.querySelector(".image").setAttribute("src", images[currentImage]);
+      }
+           //       else
+
+                  function previous(){
+                  {
+                  if(currentImage>0)
+                  {
+                  currentImage--;
+                  }
+                  else
+                  {
+                  currentImage=2;
+                  //currentImage=images.length-1;
+                  }
+                  document.querySelector(".image").setAttribute("src", images[currentImage]);
+                  }
+      }
+             /*   {
+                  currentImage++;
+                  document.querySelector(".image").setAttribute("src",images[currentImage]);
+                }*/
+                
+             /*           if(currentImage<2)
+                  
+                        {
+                          currentImage++;
+                        }
+                        else
+                          {
+                            currentImage=0;
+                          }
+
+                          document.querySelector(".image").setAttribute("src", images[currentImage]);
+
+                        }
+
+                  function previous(){
+
+                    currentImage--;
+                    document.querySelector(".image").setAttribute("src", images[currentImage]);
+                      */
+  ///////////////////// }
+      /*
+      let img=1;
+
+      function changeImage()
+            {
+              if(img===1)
+              {
+              document.querySelector(".image").setAttribute("src", "img1.jpeg");
+              img=2;
+             }
+             else
+             {
+               document.querySelector(".image").setAttribute("src", "img2.jpeg");
+               img=1;
+             }
+            }
+            */
+/*
+          document.querySelector(".head").innerText="New Text";
+          document.querySelector(".para").innerText="New Paragraph";
+          document.querySelector(".one").style.backgroundColor="blue";
+*/
+      //function
+ /*     function changeHead()
+              {
+                document.querySelector('.head').innerText="Heading 1 Text Changed"
+              }
+
+      function changeColor()
+              {
+
+                document.querySelector('.one').style.backgroundColor="green";
+
+                 }
+
+      function changeImage()
+              {
+                document.querySelector('.img').setAttribute("src", "img2.jpeg");
+              }
+
+      function changeText()
+              {
+
+                document.querySelector('.para').innerText="New paragraph Text 2";
+
+                 }
+       
+                 */
+/*
+        function changeText()
+              {
+
+                document.querySelectors(".para").innerText="New Text";
+
+                 }
+      */
+
+    //  document.querySelector();
+      
+     /*
+      
+      Unary Operator
+      */
+    /*  var cup= 2;
+      var spoon= 20;
+
+      if(cup===spoon)
+      
+          {
+
+                console.log("Hello");
+
+          }
+
+          else
+
+          {
+
+            console.log("Ops something went wrong");
+
+          }
+          */
+
+          // condition?code1:code2; Ternary operator
+
+       //   var a=6;
+        //   a===6?console.log("Hello"):console.log("Oh No, try again");
+
+    </script>
+
+</body>
+</html>
+
+
+
